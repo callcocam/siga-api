@@ -1,0 +1,18 @@
+<div *ngIf="progress.percentage" class="progress">
+    <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" attr.aria-valuenow="{{progress.percentage}}"
+     aria-valuemin="0" aria-valuemax="100" [ngStyle]="{width:progress.percentage+'%'}">
+      {{progress.percentage}}%</div>
+  </div>
+
+  <div class="card m-b-0">
+      <img id="cover-default"  class="card-img-top img-fluid" [src]="fileName" alt="No image">
+      <div class="card-body">
+          <div class="fileupload btn btn-secondary waves-effect">
+              <span><i class="ion-image m-r-5"></i>Selecionar Imagem</span>
+              <input type="file" class="upload" (change)="selectFile($event)">
+          </div>         
+          <button class="btn btn-success" [disabled]="!selectedFiles" (click)="upload()">
+              <i class="ion-upload m-r-5"></i>Upload
+            </button>
+      </div>
+  </div>
