@@ -4,8 +4,15 @@
 * Module/App: Main Js
 */
 
-var resizefunc =[]
 
+//receive calls from typescript code to update the layouts
+var AdminLTE = (function() {
+  return {
+    init: function() {
+        $.App.init();
+    }
+  }
+})(AdminLTE||{});
 !function($) {
     "use strict";
     var Sidemenu = function() {
@@ -193,7 +200,7 @@ function($) {
 //initializing main application module
 function($) {
     "use strict";
-    $.App.init();
+    // $.AdminLTE.init();
 }(window.jQuery);
 
 

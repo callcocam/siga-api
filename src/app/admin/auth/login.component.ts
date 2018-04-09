@@ -47,7 +47,7 @@ export class LoginComponent implements OnInit {
           response.user
         );
         //this.router.navigate(["/admin/dashboard"])
-        window.location.href = "/admin/dashboard"
+        window.location.href = "/conect-app/admin/dashboard"
       },
       error => {
          console.log(error)

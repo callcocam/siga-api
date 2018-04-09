@@ -7,7 +7,6 @@
 //portlets
 !function($) {
     "use strict";
-
     /**
     Portlet Widget
     */
@@ -302,7 +301,7 @@ function($) {
     //initializing main application module
 function($) {
     "use strict";
-    $.Components.init();
+    //$.Components.init();
 }(window.jQuery);
 
 

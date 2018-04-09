@@ -11,7 +11,7 @@ export class FooterComponent implements OnInit {
 
   
   constructor(private localStorage: LocalStorageService,private sharedService: SharedServicesService) { }
-  private user;
+  public user;
   ngOnInit() {
         this.user = this.localStorage.getObject(this.localStorage.USER_KEY);
         this.user.cover = this.sharedService.getSrcUrl(this.user.cover);
