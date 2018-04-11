@@ -1,8 +1,8 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { RouterModule, RouterLink } from "@angular/router";
-import { AuthComponent } from './auth/auth.component';
 import { AdminComponent } from './admin.component';
 import { NotFoundComponent } from './not-found.component';
 import { ContentComponent } from './content.component';
@@ -23,11 +23,11 @@ import { FlashMessagesComponent } from '../components/flash-messages/flash-messa
   imports: [
     CommonModule,
     FormsModule,
+    BrowserAnimationsModule,
     ReactiveFormsModule,
     RouterModule
   ],
   declarations: [
-    AuthComponent,
     FlashMessagesComponent
   ],
   exports:[

@@ -9,6 +9,7 @@ import { StarterComponent } from './starter/starter/starter.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { SharedModule } from './admin/shared.module';
 import { AdminModule } from './admin/admin.module';
+import { AuthModule } from './admin/auth/auth.module';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { AdminModule } from './admin/admin.module';
     BrowserModule,
     AppRoutingModule,
     AdminModule,    
+    AuthModule,
     SharedModule.forRoot()
   ],
   providers: [],

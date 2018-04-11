@@ -14,7 +14,7 @@
             <ul class="list-inline float-right mb-0">
 
                 <li class="list-inline-item notification-list hide-phone">
-                    <a class="nav-link waves-light waves-effect" href="#" id="btn-fullscreen">
+                    <a class="nav-link waves-light waves-effect" (click)="FullScreen.init()"   id="btn-fullscreen">
                         <i class="mdi mdi-crop-free noti-icon"></i>
                     </a>
                 </li>
@@ -57,7 +57,7 @@
 
             <ul class="list-inline menu-left mb-0">
                 <li class="float-left">
-                    <button class="button-menu-mobile open-left waves-light waves-effect">
+                    <button #menu (click)="Menu.init(menu)"  class="button-menu-mobile open-left waves-light waves-effect">
                         <i class="mdi mdi-menu"></i>
                     </button>
                 </li>
@@ -73,3 +73,4 @@
 
     </div>
     <!-- Top Bar End -->
+    <!-- ========== Left Sidebar Start ========== -->
